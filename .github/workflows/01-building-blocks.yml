@@ -1,0 +1,17 @@
+name: 01-buliding Blocks
+on: push
+jobs:
+    echo-heloo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: say hello
+              run: echo "hello satya"
+    echo-goodbye:
+        runs-on: ubuntu-latest
+        steps:
+            - name: failed step
+              run:  |
+                echo "i will fail"
+                 exit 1
+            - name: say-goodbye
+              run: echo "goodbye"        
